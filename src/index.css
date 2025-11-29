@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, -80px);
+  }
+}
+
+.float-animation {
+  animation: floatUp 6s linear forwards;
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.pop {
+  animation: pop 0.3s forwards;
+}

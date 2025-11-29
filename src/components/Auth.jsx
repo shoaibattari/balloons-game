@@ -107,7 +107,7 @@ export default function Auth() {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors"
+                className="absolute right-4 cursor-pointer top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors"
                 disabled={loading}
               >
                 {showPassword ? (
@@ -133,7 +133,7 @@ export default function Auth() {
               whileTap={{ scale: 0.98 }}
               type="submit"
               disabled={loading}
-              className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all disabled:opacity-70 flex items-center justify-center gap-3"
+              className="w-full py-4 cursor-pointer bg-linear-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all disabled:opacity-70 flex items-center justify-center gap-3"
             >
               {loading ? (
                 <>
@@ -172,7 +172,7 @@ export default function Auth() {
             whileTap={{ scale: 0.98 }}
             onClick={handleGoogleLogin}
             disabled={loading}
-            className="w-full flex items-center justify-center gap-3 py-4 bg-white text-gray-800 font-semibold rounded-2xl shadow-lg hover:shadow-2xl transition-all disabled:opacity-70"
+            className="w-full flex items-center justify-center gap-3 py-4 cursor-pointer bg-white text-gray-800 font-semibold rounded-2xl shadow-lg hover:shadow-2xl transition-all disabled:opacity-70"
           >
             <img
               src="https://www.svgrepo.com/show/475656/google-color.svg"
@@ -193,7 +193,7 @@ export default function Auth() {
                 setPassword("");
                 setShowPassword(false);
               }}
-              className="font-bold underline underline-offset-4 hover:text-cyan-300 transition-colors"
+              className="font-bold underline underline-offset-4 cursor-pointer hover:text-cyan-300 transition-colors"
             >
               {isLogin ? "Sign up free" : "Log in instead"}
             </button>
